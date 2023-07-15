@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #3e3e3e;
+  background: url(https://img.freepik.com/premium-photo/healthcare-medical-innovation-science-icon-style-concept-design-background_43780-6043.jpg?w=2000)
+    no-repeat 0 0;
+  background-size: cover;
+}
+
+header {
+  position: relative;
+  top: 0;
+  height: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  font-size: 1em;
+  z-index: 2;
+}
+
+.logo {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2em;
+  letter-spacing: 0.5px;
+}
+
+.logo img {
+  width: 30px;
+  margin-right: 8px;
+}
+
+.menu-list li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 24px;
+  cursor: pointer;
+  transition: color 0.5s;
+}
+
+.menu-list li.active,
+.menu-list li:hover {
+  color: #ff0073;
+}
+
+.main {
+  padding-top: 90px;
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left {
+  width: 100%;
+  padding: 0 16px;
+}
+
+.title {
+  font-size: 2em;
+  letter-spacing: 1px;
+  margin: 32px auto;
+  text-align: center;
+}
+
+.title strong {
+  font-size: 1.2em;
+  display: block;
+  line-height: 60px;
+}
+
+.msg {
+  width: 100%;
+  font-size: 0.9em;
+  letter-spacing: 0.7px;
+  line-height: 24px;
+  margin-bottom: 32px;
+}
+
+button.cta {
+  border: none;
+  outline: none;
+  background-color: #fff;
+  color: #ff0073;
+  padding: 14px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  box-shadow: 7px 12px 20px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  transition: background-color 0.5s;
+  font-size: 0.9em;
+}
+
+button.cta:hover {
+  background-color: #fdf3f8;
+}
+
+button span {
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+button.cta i {
+  font-size: 1.4em;
+  margin-left: 12px;
+}
+
+/* Right Side */
+
+.right {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right img {
+  max-width: 100%;
+  height: auto;
+}
+
+.colors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-top: 3px dotted #fff;
+}
+
+.colors .item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33.33%;
+  min-height: 120px;
+  padding-top: 20px;
+}
+
+.item img {
+  position: relative;
+  width: 40px;
+  cursor: pointer;
+  transition: width 0.5s;
+}
+
+.item img:hover {
+  width: 45px;
+}
+
+.item .color-selector {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  background-color: #ff0073;
+  width: 12px;
+  height: 12px;
+  transform: translate(-50%, -50%);
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.item.blue .color-selector {
+  background-color: #57c7e4;
+}
+
+.item.yellow .color-selector {
+  background-color: #ecdc47;
+}
+
+.item.active img {
+  width: 60px;
+}
+
+.item.active .color-selector {
+  width: 16px;
+  height: 16px;
+}
+
+.item.active {
+  min-height: 150px;
+}
+
+.additional-info {
+  background-color: #fff;
+  border-radius: 16px;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding: 12px 16px;
+  line-height: 24px;
+  font-size: 0.9em;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+}
